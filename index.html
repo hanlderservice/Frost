@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Frost Moon">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico"/>
+    <title>Frost Moon Blog Manager</title>
+    <!--引用样式-->
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/icons.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+
+<div class="preloader">
+    <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+    </svg>
+</div>
+
+<div id="main-wrapper">
+
+    <header class="topbar">
+        <nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+            <div class="navbar-header">
+
+                <a class="navbar-brand">
+                    <b><img src="img/logo/logo-icon.png" alt="homepage" class="dark-logo"/></b>
+                    <span><img src="img/logo/logo-text.png" alt="homepage" class="dark-logo"/></span></a>
+            </div>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav mr-auto mt-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-toggler sidebartoggler hidden-md-up text-muted waves-effect waves-dark"
+                           href="javascript:void(0)"><i class="ion ion-navicon-round"></i></a></li>
+
+                    <li class="nav-item hidden-sm-down search-box">
+                        <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)">
+                            <i class="ion-search"></i></a>
+                        <form class="app-search">
+                            <input type="text" class="form-control" placeholder="请输入搜索内容">
+                            <a class="srh-btn"><i class="ion-close"></i></a></form>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav my-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-muted text-muted waves-effect waves-dark" href=""
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="ion-ios-bell-outline"></i>
+                            <div class="notify"><span class="heartbit"></span> <!-- <span class="point"></span> -->
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right mailbox scale-up">
+                            <ul>
+                                <li>
+                                    <div class="drop-title">通知</div>
+                                </li>
+                                <li>
+                                    <div class="message-center">
+                                        <a href="#">
+                                            <div class="btn btn-danger btn-circle"><i class="fa  fa-link"></i></div>
+                                            <div class="mail-content">
+                                                <h5>抚琴一线</h5>
+                                                <span class="mail-desc">小荷才露尖尖角</span><span class="time">2019-11-08 13:00</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li><a class="nav-link text-center" href="#">
+                                    <strong>查看更多</strong><i class="fa  fa-angle-double-right"></i>
+                                </a></li>
+
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" id="2"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="ion-ios-email-outline"></i>
+                            <div class="notify"><span class="heartbit"></span> <span class="point"></span></div>
+                        </a>
+
+                        <div class="dropdown-menu mailbox dropdown-menu-right scale-up" aria-labelledby="2">
+
+                            <ul>
+                                <li>
+                                    <div class="drop-title">消息中心</div>
+                                </li>
+                                <li>
+                                    <div class="message-center">
+                                        <a href="#">
+                                            <div class="user-img">
+                                                <img src="img/avatar/6.jpg" alt="user" class="img-circle">
+                                                <span class="profile-status online pull-right"></span></div>
+                                            <div class="mail-content">
+                                                <h5>小荷才露尖尖角</h5><span class="mail-desc">早有蜻蜓立上头</span><span
+                                                    class="time">2019-11-08 15：05</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item dropdown"><a href="#" class="nav-link nav-link-lg full-screen-link">
+                        <i class="ion-arrow-expand" id="fullscreen-button"></i></a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href=""
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                src="img/avatar/6.jpg" alt="user" class="profile-pic"/></a>
+                        <div class="dropdown-menu dropdown-menu-right scale-up">
+                            <ul class="dropdown-user">
+                                <li>
+                                    <div class="dw-user-box">
+                                        <div class="u-img"><img src="img/avatar/6.jpg" alt="user"></div>
+                                        <div class="u-text">
+                                            <h4>Frost </h4>
+                                            <p class="text-muted">1029632196@qq.com</p>
+                                            <a href="#" class="btn btn-rounded btn-danger btn-sm">头像</a></div>
+                                    </div>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="ion ion-android-person"></i> 我的头像</a></li>
+                                <li><a href="#"><i class="ion-android-drafts"></i> 我的设置</a></li>
+                                <li><a href="#"><i class="ion ion-gear-a"></i> 我的宝箱</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="ion ion-gear-a"></i>账号设置</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"><i class="fa fa-power-off"></i> 退出登录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <aside class="left-sidebar" >
+        <div class="scroll-sidebar">
+            <div class="user-profile" style="background: url(img/background/user-info.jpg) no-repeat;">
+                <div class="profile-img"><img src="img/avatar/6.jpg" alt="user"/></div>
+                <div class="profile-text"><a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown"
+                                             role="button" aria-haspopup="true" aria-expanded="true">小荷才露尖尖角</a>
+                      <div class="dropdown-menu animated flipInY">
+                          <a href="#" class="dropdown-item"><i class="ion ion-android-person"></i> 我的头像</a>
+                          <a href="#" class="dropdown-item"><i class="ion ion-android-person"></i> 我的心态</a>
+                          <a href="#" class="dropdown-item"><i class="ion ion-android-person"></i> 我的工具</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#" class="dropdown-item"><i class="ion ion-android-person"></i>账户设置</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#" class="dropdown-item"><i class="fa fa-power-off"></i>退出登录</a>
+                      </div>
+                </div>
+            </div>
+            <!--下边导航栏-->
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+                    <li class="nav-small-cap">PERSONAL</li>
+                    <li>
+                        <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i
+                                class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard </span></a>
+                        <ul aria-expanded="false" class="collapse">
+                            <li><a href="index.html">Dashboard 1</a></li>
+                            <li><a href="#">Dashboard 2</a></li>
+                            <li><a href="#">Dashboard 3</a></li>
+                            <li><a href="#">Dashboard 4</a></li>
+                            <li><a href="#">Dashboard 5</a></li>
+                            <li><a href="#">Dashboard 6</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i
+                            class="mdi mdi-laptop-windows"></i><span class="hide-menu">Template Demos</span></a>
+                        <ul aria-expanded="false" class="collapse">
+                            <li><a href="#">Minisidebar</a></li>
+                            <li><a href="#">Horizontal</a></li>
+                            <li><a href="#">Material Version</a></li>
+                            <li><a href="#">RTL Version</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+
+    </aside>
+
+    <div id="page-wrapper" class="page-wrapper">
+        <div class="content-tabs">
+            <button class="roll-nav roll-left tabLeft">
+                <i class="fa fa-backward"></i>
+            </button>
+            <nav class="page-tabs menuTabs">
+                <div class="page-tabs-content" style="margin-left: 0;">
+                    <a href="javascript:void(0);" class="menuTab active" data-id="#">首 页</a>
+
+
+                </div>
+            </nav>
+            <button class="roll-nav roll-right tabRight">
+                <i class="fa fa-forward" style="margin-left: 3px;"></i>
+            </button>
+            <div class="btn-group roll-nav roll-right">
+                <button class="dropdown tabClose" data-toggle="dropdown">
+                    页签操作<i class="fa fa-caret-down" style="padding-left: 3px;"></i>
+                </button>
+               <div class="dropdown-menu dropdown-menu-right ">
+                   <ul >
+                       <li><a class="tabReload" href="javascript:void(0);">刷新当前</a></li>
+                       <li><a class="tabCloseCurrent" href="javascript:void(0);">关闭当前</a></li>
+                       <li><a class="tabCloseAll" href="javascript:void(0);">全部关闭</a></li>
+                       <li><a class="tabCloseOther" href="javascript:void(0);">关闭其他</a></li>
+                   </ul>
+
+               </div>
+            </div>
+            <!--<button class="roll-nav roll-right fullscreen"><i class="fa fa-arrows-alt"></i></button>-->
+
+        </div>
+        <div class="content-iframe" style="overflow: hidden;">
+            <div class="mainContent" id="content-main" style="margin: 10px; margin-bottom: 0; padding: 0;">
+                <iframe class="LRADMS_iframe" width="100%" height="100%" src="main.html" frameborder="0" data-id="main.html"></iframe>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="js/sticky-kit.min.js"></script>
+
+
+<script type="text/javascript" src="js/sidebar-menu.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
